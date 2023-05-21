@@ -16,40 +16,52 @@ insert into Song( albums_song, duration, albums_id) values ( N'HoKong', 234, 1);
 insert into Song( albums_song, duration, albums_id) values ( N'Abumyerte', 43, 2);
 insert into Song( albums_song, duration, albums_id) values ( N'Miyzzzy', 96, 2);
 insert into Song( albums_song, duration, albums_id) values ( N'HongKong', 182, 2);
-insert into Song( albums_song, duration, albums_id) values ( N'Abudddмой', 293, 3);
+insert into Song( albums_song, duration, albums_id) values ( N'Abudddмой', 293, 3)
+insert into Song( albums_song, duration, albums_id) values (N'my own', 45, 2),
+('own my', 124, 3),
+('my', 84, 2),
+('oh my god', 264, 3),
+('by myself', 167, 2),
+('bemy self', 293, 1),
+('go my', 58, 1),
+('myself by', 299, 1),
+('by myself by', 99, 2),
+('beemy', 180, 3),
+('premyne', 79, 1);
+
 
 insert into Collection(id, name_collection, release_date) values (1, N'They', '14.02.2020');
 insert into Collection(id, name_collection, release_date) values (2, N'IS', '16.12.2004');
 insert into Collection(id, name_collection, release_date) values (3, N'He', '10.06.2019');
 insert into Collection(id, name_collection, release_date) values (4, N'She', '04.02.2000');
 
-INSERT INTO song.songofcollection(song_id, collection_id) values (2, 1);
-INSERT INTO song.songofcollection(song_id, collection_id) values (4, 1);
-INSERT INTO song.songofcollection(song_id, collection_id) values (5, 1);
-INSERT INTO song.songofcollection(song_id, collection_id) values (6, 1);
-INSERT INTO song.songofcollection(song_id, collection_id) values (3, 2);
-INSERT INTO song.songofcollection(song_id, collection_id) values (1, 2);
-INSERT INTO song.songofcollection(song_id, collection_id) values (5, 2);
-INSERT INTO song.songofcollection(song_id, collection_id) values (2, 3);
-INSERT INTO song.songofcollection(song_id, collection_id) values (3, 3);
-INSERT INTO song.songofcollection(song_id, collection_id) values (6, 3);
-INSERT INTO song.songofcollection(song_id, collection_id) values (1, 4);
-INSERT INTO song.songofcollection(song_id, collection_id) values (2, 4);
-INSERT INTO song.songofcollection(song_id, collection_id) values (3, 4);
-INSERT INTO song.songofcollection(song_id, collection_id) values (4, 4);
-INSERT INTO song.songofcollection(song_id, collection_id) values (5, 4);
-INSERT INTO song.songofcollection(song_id, collection_id) values (6, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (2, 1);
+INSERT INTO songofcollection(song_id, collection_id) values (4, 1);
+INSERT INTO songofcollection(song_id, collection_id) values (5, 1);
+INSERT INTO songofcollection(song_id, collection_id) values (6, 1);
+INSERT INTO songofcollection(song_id, collection_id) values (3, 2);
+INSERT INTO songofcollection(song_id, collection_id) values (1, 2);
+INSERT INTO songofcollection(song_id, collection_id) values (5, 2);
+INSERT INTO songofcollection(song_id, collection_id) values (2, 3);
+INSERT INTO songofcollection(song_id, collection_id) values (3, 3);
+INSERT INTO songofcollection(song_id, collection_id) values (6, 3);
+INSERT INTO songofcollection(song_id, collection_id) values (1, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (2, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (3, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (4, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (5, 4);
+INSERT INTO songofcollection(song_id, collection_id) values (6, 4);
 
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (1, 1);
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (2, 1);
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (4, 2);
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (1, 3);
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (2, 3);
-INSERT INTO song.albumsofexecutor(executor_id, albums_id) values (3, 3);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (1, 1);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (2, 1);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (4, 2);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (1, 3);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (2, 3);
+INSERT INTO albumsofexecutor(executor_id, albums_id) values (3, 3);
 
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (1, 1);
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (1, 2);
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (2, 3);
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (3, 1);
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (1, 4);
-INSERT INTO song.genreofexecutor(genre_id, executor_id) values (2, 2);
+INSERT INTO genreofexecutor(genre_id, executor_id) values (1, 1), 
+(1, 2), 
+(2, 3), 
+(3, 1), 
+(1, 4), 
+(2, 2);
